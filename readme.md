@@ -8,3 +8,4 @@ Here you will find the lecture slides as well as the lecture code for each lectu
 ### Slack
 
 We use Slack for course communication.  You will find the invitation link on Canvas in the course modules. 
+This is the newline 
