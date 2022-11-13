@@ -1,0 +1,17 @@
+{
+  "name": "cs-546-lab-6",
+  "version": "1.0.0",
+  "description": "My lab6 module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "seed": "node ./tasks/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peixuan Wu 20012946",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.11.0"
+  }
+}

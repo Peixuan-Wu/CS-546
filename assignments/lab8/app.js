@@ -1,3 +1,5 @@
+//Here is where you'll set up your server as shown in lecture code
+
 const express = require('express');
 const app = express();
 const static = express.static(__dirname + '/public');

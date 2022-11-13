@@ -1,0 +1,17 @@
+{
+  "name": "cs-546-lab-8",
+  "version": "1.0.0",
+  "description": "My lab8 module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./tasks/seed.js"
+  },
+  "author": "Peixuan Wu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  }
+}

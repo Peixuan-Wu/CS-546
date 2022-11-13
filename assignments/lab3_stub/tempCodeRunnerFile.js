@@ -1,0 +1,1 @@
+console.log(await getCompanyById(1001));
