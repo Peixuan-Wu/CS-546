@@ -1,73 +1,33 @@
-<!-- 
-This page will be shown when the following route is hit: GET http://localhost:3000/
-This page will be a valid HTML document. 
-The title of the document should be "People Finder". You should have the title set as the <title> element of the HTML document and as an h1 in your document.
-Your page should reference a CSS file, /public/main-styles.css; with at least 10 rulesets that apply to this page; these 10 rules can also apply to elements across all of your pages, or be unique to this page.
-You should have a main element, and inside of the main element have a p element with a brief (2-3 sentence description) of what your website does.
-Also inside the main element, you will have a form; this form will POST to /searchpeople. This form will have an input and a label; the label should properly reference the same id as the input. You should also have a button with a type of submit that submits the form. The input in your form should have a name of searchPersonName.
- -->
+
 <!DOCTYPE html>
 
 <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>People Finder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>People Finder</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/public/main-styles.css">
-    </head>
+    <link rel="stylesheet" href="/public/main-styles.css">
+</head>
 
-    <body>
-        <main>
-            <h1>People Finder</h1>
-            <p>This is a website help you find people in the dataset.<br>
-               You can search a people by name and I'll show you relevant result.<br>
-               You can look up a person's detail by input the id.
-            </p>
-            <form action="/searchpeople" method="POST" class="homepage-post-form">
-                <label>
-                  searchPersonName
-                  <input type="text" name="searchPersonName" placeholder="searchPersonName" value="{{post.title}}" class="full-width-input"/>
-                </label>
-                 
-                <label for="post-body">
-                  Post Body
-                </label>
-                <textarea id="post-body" name="body" rows="4" placeholder="Post Content" class="full-width-input">{{post.body}}</textarea>
-            
-                <label for="poster">
-                  Poster
-                </label>
-                <select class="full-width-input" name="posterId">
-                  <option value="">Select User...</option>
-                  {{#each users}}
-                    <option value="{{_id}}">{{firstName}} {{lastName}}</option>
-                  {{/each}}
-                </select>
-                <label>
-                  <input type="radio" name="user-test" value="1" /> One
-                </label>
-                <label>
-                  <input type="radio" name="user-test" value="2" /> Two
-                </label>
-            
-                <div>
-                  <label>
-                  <input type="checkbox" name="checkbox-test" value="first" /> First
-              </label></div>
-                <div>
-                  <label>
-                  <input type="checkbox" name="checkbox-test" value="second" /> Second
-              </label></div>
-                <button type="submit">Create New Post</button>
-                <button type="reset">Clear Form</button>
-                <button type="button">Click me!</button>
-              </form>
-        </main>
-
-        
-        <script src="" async defer></script>
-    </body>
+<body>
+    <main>
+        <h1>People Finder</h1>
+        <p>This is a website help you find people in the dataset.<br>
+            You can search a people by name and I'll show you the relevant results.<br>
+            You can look up a person's detail by input the id in the url.
+        </p>
+        <form action="/searchpeople" method="POST" class="homepage-post-form">
+            <label for="html">
+                searchPersonName:
+                <input id="html" type="text" name="searchPersonName" placeholder="searchPersonName" value="" class="full-width-input">
+            </label>
+                
+            <br>
+            <button type="submit" class="form-button">search people by name</button>
+        </form>
+    </main>
+</body>
 </html>

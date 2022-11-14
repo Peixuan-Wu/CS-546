@@ -1,5 +1,131 @@
 /*This file should have CSS rulesets */
 
+
 .homepage-post-form {
-	max-width: 300px;
+	max-width: 1000px;
+	width: 100%;
+	border: solid #5B6DCD 5px;
+	padding:5px;
+	line-height: 2;
+	font-size: 20px;
+}
+
+.homepage-post-form .form-button {
+	/* background-color: #eab70f; yellow */
+	font-size: 20px;
+	color: #335b08;
+	line-height: 2;
+	width: 25%;
+	height:auto;
+}
+
+label {
+	font-weight: bold;
+	color: #d78e08;
+}
+
+HTML,
+body {
+	font-size: 14pt;
+}
+
+body {
+	background: #dedede;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+main {
+	max-width: 75%;
+	margin: auto;
+}
+
+
+p {
+	font-size: 20px;
+	line-height: 2;
+}
+
+p {
+	color:brown;
+}
+
+p {
+	border: 2mm ridge rgba(220, 50, 92, 0.6);
+}
+
+
+h1,
+h2 {
+	color: #9b13c0;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	border: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+h2 {
+	border: 4mm ridge rgba(31, 179, 26, 0.6);
+}
+
+h2 {
+	animation-delay: 300ms;
+}
+
+h1 {
+	outline-style: dotted;
+}
+
+ul {
+	color: #9b13c0;
+}
+
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+dl {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+dt {
+	color: #016217;
+}
+
+dt {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+dd {
+	color: #090650;
+}
+
+.another-search {
+	color: #e40000;
+}
+
+.another-search {
+	font-size: 20px;
+}
+
+.another-search {
+	animation-delay: 300ms;
 }

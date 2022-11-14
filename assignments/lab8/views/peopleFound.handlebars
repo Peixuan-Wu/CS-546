@@ -6,3 +6,19 @@ You should have a main element, and inside of the main element have a ul tag tha
 
 You must also provide an a tag that links back to your / route with the text Make another search.
 }}
+
+<h1>People Found</h1>
+<h2>{{searchPersonName}}</h2>
+<main>
+    
+    <ul>
+        {{#each resultPeople}}
+        <li>
+            <a href="/persondetails/{{this.id}}">{{this.firstName}} {{this.lastName}}</a>
+        </li>
+        {{/each}}
+        
+    </ul>
+
+    <a class= "another-search" href="http://localhost:3000/">Make another search</a>
+</main>
