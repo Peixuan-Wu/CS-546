@@ -53,6 +53,13 @@ p {
 	border: 2mm ridge rgba(220, 50, 92, 0.6);
 }
 
+.not-found {
+	color: #d78e08;
+}
+
+.error {
+	color: #d78e08;
+}
 
 h1,
 h2 {

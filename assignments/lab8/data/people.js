@@ -10,7 +10,7 @@ const getAllPeople = async () => {
 const searchPeopleByName = async (searchPersonName) => {
     const peopleData = await getAllPeople();
     if (!searchPersonName || searchPersonName.trim().length == 0 || typeof searchPersonName != "string") {
-        throw `The searchPersonNmae should not ba an empty string`
+        throw `The searchPersonNmae should not be an empty string`
     }   
     searchPersonName = searchPersonName.trim().toLowerCase();
     let peopleMatchResult = [];
