@@ -1,0 +1,53 @@
+<!-- 
+Your page should have a few basic user interface elements:
+-A header tag, with an h1 naming your site, with a title for your page
+-A footer with your name, student ID, and any other info about yourself you wish to include
+-A single unordered list with an id of results. All the arrays you have checked so far (until you refresh the page) will appear in this list as list items. Each item in the list will alternate the text colors starting with green, then red, then green, then red etc.
+
+Your page will have a form with the following:
+-A label with a for attribute referencing your input
+-A input with a name and type of text
+-A button to submit the form
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sort Array Site</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="public/css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sort Array Site</h1>
+        </header>
+
+        <div id="error" class="error"></div><br>
+
+        <form method="POST" id="myForm">
+            <label for="form" id="formLabel">
+                Sort Array:
+                <input id="form" type="text" name="sortArray" value="" class="full-width-input">
+            </label>
+
+            <br>
+            <br>
+            <button type="submit" class="form-button">start to sort array</button>
+        </form>
+
+        <ul id="results">
+            
+        </ul>
+        <footer>
+            name: Peixuan Wu<br>
+            cwid: 20012946<br>
+            age: 22
+        </footer>
+        
+        <script src="/public/js/main.js"></script>
+    </body>
+</html>
